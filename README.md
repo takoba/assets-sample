@@ -2,7 +2,7 @@
 
 ## Using libraries
 
-- Backbone.js
-- Underscore.js
-- Babel
-- webpack
+- [Backbone.js](http://backbonejs.org/)
+- [Underscore.js](http://underscorejs.org/)
+- [Babel](https://babeljs.io/)
+- [webpack](http://webpack.github.io/)
