@@ -1,0 +1,23 @@
+{
+  "name": "assets-sample",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takoba/assets-sample.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "takoba",
+    "url": "https://github.com/takoba"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takoba/assets-sample/issues"
+  },
+  "homepage": "https://github.com/takoba/assets-sample#readme"
+}
