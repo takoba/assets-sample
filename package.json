@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/takoba/assets-sample/issues"
   },
-  "homepage": "https://github.com/takoba/assets-sample#readme"
+  "homepage": "https://github.com/takoba/assets-sample#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.3.13",
+    "gulp": "^3.9.0",
+    "recursive-readdir": "^1.3.0",
+  }
 }
