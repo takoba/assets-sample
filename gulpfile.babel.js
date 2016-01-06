@@ -2,26 +2,20 @@ import gulp      from 'gulp';
 import recursive from 'recursive-readdir';
 // -- /load plugins
 
-const config = {
-  gulp: {
-    paths: {
-      tasksDir: `./gulp/tasks`,
-    },
-  },
-};
+import config from './gulp/config';
 // -- /config
 
 /**
  * `gulp recursice-require-task`
  */
 gulp.task('recursive-require-task', (callback) => {
-  recursive(config.gulp.paths.tasksDir, (err, files) => {
+  recursive(config.paths.gulp.tasksDir, (err, files) => {
     files.forEach((path) => {
       if (!path.match(/\.js$/)) {
         return;
       }
 
-      require(`./${path.replace('\\', '/')}`)(gulp);
+      require(`./${path.replace('\\', '/')}`)(gulp, config);
     });
     callback();
   });
