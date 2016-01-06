@@ -20,3 +20,10 @@ gulp.task('recursive-require-task', (callback) => {
     callback();
   });
 });
+
+/**
+ * `gulp lint:js`
+ */
+gulp.task('lint:js', ['recursive-require-task'], () => {
+  gulp.start(['lint:js']);
+});
