@@ -22,6 +22,13 @@ gulp.task('recursive-require-task', (callback) => {
 });
 
 /**
+ * `gulp webpack`
+ */
+gulp.task('webpack', ['recursive-require-task', 'lint:js'], () => {
+  gulp.start(['webpack']);
+});
+
+/**
  * `gulp lint:js`
  */
 gulp.task('lint:js', ['recursive-require-task'], () => {

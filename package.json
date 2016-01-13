@@ -22,10 +22,14 @@
   "homepage": "https://github.com/takoba/assets-sample#readme",
   "devDependencies": {
     "babel-cli": "^6.3.17",
+    "babel-loader": "^6.2.1",
     "babel-plugin-add-module-exports": "^0.1.2",
     "babel-preset-es2015": "^6.3.13",
     "gulp": "^3.9.0",
     "gulp-jscs": "^3.0.2",
     "recursive-readdir": "^1.3.0",
+    "walkdir": "0.0.11",
+    "webpack": "^1.12.10",
+    "webpack-stream": "^3.1.0"
   }
 }
