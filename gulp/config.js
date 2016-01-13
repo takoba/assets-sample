@@ -1,5 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
+import BowerWebpackPlugin from 'bower-webpack-plugin';
 // -- /load plugins
 
 const SRC_DIR = './resources/assets/js';
@@ -24,6 +25,15 @@ export default {
       path    : `${__dirname}/${path.normalize(DST_DIR)}`,
       filename: '[name].js',
     },
+    resolve: {
+      root: [
+        path.join(__dirname, 'bower_components'),
+      ],
+      extensions: [
+        '',
+        '.js',
+      ],
+    },
     module: {
       loaders: [
         {
@@ -36,6 +46,7 @@ export default {
     plugins: [
       new webpack.optimize.DedupePlugin(),
       new webpack.optimize.AggressiveMergingPlugin(),
+      new BowerWebpackPlugin(),
     ],
   },
 };
